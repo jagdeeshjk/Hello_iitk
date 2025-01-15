@@ -9,7 +9,7 @@ Here’s a visually appealing and well-organized README file for your project:
 **A web application to manage and explore courses with ease!**  
 Organize your learning journey with features like user authentication, course management, and in-depth course details.
 
-![Course Helper Website](https://hello-iitk-x37t.vercel.app/)  
+[Course Helper Website](https://hello-iitk-x37t.vercel.app/)  
 
 
 </div>
