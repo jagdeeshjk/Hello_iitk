@@ -9,7 +9,14 @@ const authRoutes = require("./routes/authRoutes");
 const coursesRoutes = require("./routes/courseRoutes");
 
 const app = express();
-app.use(cors());
+const FRONTEND_URL = process.env.FRONTEND_URL;  // Default for local development
+
+const corsOptions = {
+  origin: "https://hello-iitk-x37t.vercel.app", // Allow only your frontend URL
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true, // Allow cookies and credentials
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Debugging middleware to log all incoming requests
