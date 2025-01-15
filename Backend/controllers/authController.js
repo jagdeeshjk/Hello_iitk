@@ -29,23 +29,27 @@ const loginUser = async (req, res) => {
   const { username, password } = req.body;
 
   try {
+    console.log("Login attempt for user:", username);
+
     const user = await db.query("SELECT * FROM myschema.auth WHERE username = $1", [username]);
 
     if (!user.rows.length) {
-      console.error("User not found:", username); // Add detailed logging
+      console.error("User not found:", username);
       return res.status(400).json({ message: "User not found" });
     }
 
     const validPassword = await bcrypt.compare(password, user.rows[0].password);
     if (!validPassword) {
-      console.error("Invalid password for user:", username); // Add detailed logging
+      console.error("Invalid password for user:", username);
       return res.status(400).json({ message: "Invalid password" });
     }
 
     const token = generateToken({ id: user.rows[0].id, username: user.rows[0].username });
+    console.log("Generated token:", token); // Add detailed logging
+    console.log("Login successful for user:", username);
     res.json({ token });
   } catch (error) {
-    console.error("Error during user login:", error); // Add detailed logging
+    console.error("Error during user login:", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
