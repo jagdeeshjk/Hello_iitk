@@ -147,7 +147,7 @@ Organize your learning journey with features like user authentication, course ma
 
 <div align="center">
 
-**Crafted with 💻 and ❤️ by [Your Name](https://jagdeesh.netlify.app/).**  
+**Crafted with 💻 and ❤️ by [Jagdeesh Meena](https://jagdeesh.netlify.app/).**  
 
 
 </div>
