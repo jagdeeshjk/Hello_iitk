@@ -93,9 +93,7 @@ export default function SignUp() {
           justifyContent: "center",
           margin: "auto",
           height: "100%",
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-          padding: 4,
-          borderRadius: 2,
+          
         }}
       >
         <Box
