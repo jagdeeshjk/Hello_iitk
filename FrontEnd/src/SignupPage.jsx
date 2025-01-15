@@ -25,7 +25,7 @@ export default function SignUp() {
     };
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signup", signupDetails);
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`, signupDetails);
     
       if (response.status === 201) {
         alert("Signup successful! Redirecting to login...");

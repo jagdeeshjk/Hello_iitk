@@ -44,7 +44,7 @@ const CoursesPage = () => {
       }
 
       try {
-        const response = await axios.get("http://localhost:5000/api/courses", {
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/courses`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setCourses(response.data);
@@ -78,7 +78,7 @@ const CoursesPage = () => {
   const handleAddNewCourse = async () => {
     const token = localStorage.getItem("jwtToken");
     try {
-      const response = await axios.post("http://localhost:5000/api/courses", newCourse, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/courses`, newCourse, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCourses([...courses, response.data]);
@@ -91,7 +91,7 @@ const CoursesPage = () => {
   const handleDeleteCourse = async (courseId) => {
     const token = localStorage.getItem("jwtToken");
     try {
-      await axios.delete(`http://localhost:5000/api/courses/${courseId}`, {
+      await axios.delete(`${import.meta.env.VITE_BACKEND_URL}api/courses/${courseId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCourses(courses.filter((course) => course.id !== courseId));
@@ -104,7 +104,7 @@ const CoursesPage = () => {
     const token = localStorage.getItem("jwtToken");
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/courses/${selectedCourse.id}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/courses/${selectedCourse.id}`,
         selectedCourse,
         {
           headers: { Authorization: `Bearer ${token}` },
