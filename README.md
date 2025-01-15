@@ -1,23 +1,33 @@
-📚 Course Helper
+Here’s a visually appealing and well-organized README file for your project:
 
-A web application to manage and explore courses with ease! 
+---
+
+<div align="center">
+
+# 📚 Course Helper
+
+**A web application to manage and explore courses with ease!**  
 Organize your learning journey with features like user authentication, course management, and in-depth course details.
 
-[Course Helper Wevsite] (https://hello-iitk-x37t.vercel.app/)
+![Course Helper Website](https://hello-iitk-x37t.vercel.app/)  
 
 
- 🌟 Features
+</div>
+
+---
+
+## 🌟 Features
 
 - **🔒 User Authentication**: Secure signup and login functionality.  
 - **📋 Course Management**: Add, edit, and delete courses (for authenticated users).  
 - **🔍 Detailed Views**: Explore in-depth information about individual courses.  
 - **🎨 Responsive Design**: Built for a seamless experience on all devices.
 
+---
 
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-
- Frontend
+### Frontend
 - **React**: Component-based UI library.
 - **Vite**: Modern, fast build tool.
 - **Material-UI**: Pre-styled and customizable UI components.
@@ -96,8 +106,7 @@ Organize your learning journey with features like user authentication, course ma
 
 ## 📂 Project Structure
 
-plaintext
-
+```plaintext
 ├── Backend/
 │   ├── api/
 │   ├── controllers/
@@ -116,14 +125,15 @@ plaintext
 │   ├── index.html
 │   └── .env
 └── README.md
+```
 
-
-
+---
 
 ## 🗒️ Environment Variables
-Backend
-DATABASE_URL`: PostgreSQL database connection URL.  
- DATABASE_SSL`: Boolean indicating SSL usage.  
+
+### Backend
+- `DATABASE_URL`: PostgreSQL database connection URL.  
+- `DATABASE_SSL`: Boolean indicating SSL usage.  
 - `JWT_SECRET`: Secret key for signing tokens.  
 - `JWT_EXPIRATION`: Expiry time for JWTs.  
 - `PORT`: Port for the backend server.  
@@ -132,4 +142,15 @@ DATABASE_URL`: PostgreSQL database connection URL.
 ### Frontend
 - `VITE_BACKEND_URL`: URL of the backend server.
 
-*Crafted with 💻 and ❤️ by Jagdeesh Meena (https://jagdeesh.netlify.app).*  
+---
+
+
+<div align="center">
+
+**Crafted with 💻 and ❤️ by [Your Name](https://jagdeesh.netlify.app/).**  
+
+
+</div>
+
+---
+
