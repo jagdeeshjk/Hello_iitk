@@ -74,10 +74,8 @@ export default function SignUp() {
             t.palette.mode === "light" ? t.palette.grey[50] : t.palette.grey[900],
           backgroundSize: "cover",
           backgroundPosition: "center",
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          zIndex: -1,
+          
+  
         }}
       />
       <Grid
