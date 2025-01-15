@@ -1,0 +1,11 @@
+.env
+
+node_modules/
+
+*.log
+
+dist/
+
+build/
+
+.vercel/
