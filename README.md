@@ -54,7 +54,7 @@ Organize your learning journey with features like user authentication, course ma
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/course-helper.git
+   git clone https://github.com/jagdeeshjk/course-helper.git
    cd course-helper
    ```
 
